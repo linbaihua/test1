@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>2021.12.5 study</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function muFunction(){
+                var a=5,b=6;
+                var c=a*b;
+                var d=a+b;
+                alert(d); //弹出框显示可以直接是alert也可以是 window.alert
+                window.alert(c);
+                return b-a; 
+            }
+            function myFunction1(num){
+                total=num*num; //这里定义得total是全局变量
+                return total;
+            }
+            var a=55;
+            var total=50; //这里定义得是函数外得变量
+            var number=myFunction1(20); //调用函数改变了上面total得值，从50-400
+            alert(total);
+            document.write(window.a); //window可以调用全局变量和函数
+        </script>
+    </body>
+</html>

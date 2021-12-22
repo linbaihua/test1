@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <ul id="purchase">  
+            <!-- 指定一个id值 -->
+            <li class="sales">canon</li>
+            <li class="sales">sony</li>
+            <!-- 指定两个 sales class -->
+            <li class="camera">nikon</li>
+            <li class="camera">fujian</li>
+            <li class="camera">olympus</li>
+            <!-- 指定三个 camera class -->
+        </ul>
+
+        <ul id="fruit">
+            <!-- 指定一个 fruit id -->
+            <li class="great">apple</li>
+            <!-- 指定一个 class great -->
+            <li class="great，good">orange</li>
+            <!-- 指定两个class great-good ，就是class中不管你写啥反正它是string类型，只要后获取这个class时写的参数一样就行了-->
+        </ul>
+        <script>
+            var a=document.getElementById("purchase"); 
+            // 获得指定id的对象
+            var b=a.getElementsByClassName("sales");  
+            // 获得指定class的对象
+            alert(b.length);
+            //以弹出分方式输出
+
+            var c=document.getElementById("fruit");
+            //获得id 为 fruit 的对象
+            var d=c.getElementsByClassName("great，good");
+            // 获得 class 为 great good 的有两个class值得对象，
+            alert(d.length);
+        </script>
+    </body>
+</html>
